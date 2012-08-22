@@ -1,0 +1,25 @@
+<!DOCTYPE html Public "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>Alon's Running Store</title>
+  <%= stylesheet_link_tag "depot", :media => "all" %>
+</head>
+
+<body id="store">
+  <div id="banner">
+    <%= @page_title || "Alon's Running Store" %>
+  </div>
+  <div id="columns">
+    <div id="side">
+      <a href="http://www....">Home</a><br/>
+      <a href="http://www....">Questions</a><br/>
+      <a href="http://www....">News</a><br/>
+      <a href="http://www....">Contact</a><br/>
+    </div>
+    <div id="main">
+      <%= yield :layout %>
+    </div>
+  </div>
+</body>
+</html>
